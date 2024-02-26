@@ -64,7 +64,6 @@ let medicals = [
 ];
 
 
-
 const sidebar = ref(null);
 
 </script>
@@ -98,9 +97,4 @@ const sidebar = ref(null);
   <MobileSidebar ref="sidebar"></MobileSidebar>
   <!-- end mobile sitebar -->
 
-  <!-- internal js -->
-  <!-- <script type="module" src="/main.js"></script>
-  <script>
-    new WOW().init();
-  </script> -->
 </template>

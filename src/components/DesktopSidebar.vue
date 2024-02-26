@@ -7,30 +7,26 @@ import user from "@/assets/images/user.png";
     <nav
       class="w-80 bg-white text-primary h-screen hidden sm:block sm:sticky sm:top-0 overflow-scroll no-scrollbar px-3 border-r border-r-stockColor"
     >
-      <div class="sticky top-0 pt-4">
-        <div
-          class="p-2 w-full flex justify-start outline-none gap-2 items-center pb-6 bg-white"
-        >
+      <div class="sticky top-0">
+        <div class="p-2 py-4 w-full flex justify-center outline-none gap-2 items-center bg-white">
           <div>
-            <img :src="marslogo" alt="" class="w-24" />
+            <img :src="marslogo" alt="" class="w-32" />
           </div>
-          <!-- <h2 class="text-xl font-bold">MARS</h2> -->
         </div>
+        <hr>
         <!-- user -->
         <a href="#">
-          <div class="flex items-center bg-white text-primar gap-3 p-2">
-            <img :src="user" alt="user-photo" class="rounded-full w-14 border border-icon-color"
-            />
-
+          <div class="flex items-center bg-white text-primar gap-3 py-4">
+            <img :src="user" alt="user-photo" class="rounded-full w-14 border border-icon-color"/>
             <h3 class="text-xl font-medium block">
               Account Holder<br />
-              <span class="text-icon-color text-sm">Premium Member</span>
+              <span class="text-gray-400 text-sm">Premium Member</span>
             </h3>
           </div>
         </a>
       </div>
 
-      <hr class="border-b border-b-stockColor py-2 border-0" />
+      <hr class="border-b border-b-stockColor border-0" />
 
       <div class="navStyle text-lightBlue border-l-4 border-l-lightBlue">
         <i class="fa-solid fa-hospital"></i>

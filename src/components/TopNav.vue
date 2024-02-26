@@ -45,7 +45,7 @@ function toggle(){
               <img
                 :src="user"
                 alt=""
-                class="rounded-full w-10 border border-primary"
+                class="rounded-full w-10 border"
               />
             </div>
           </a>

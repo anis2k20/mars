@@ -3,7 +3,7 @@ import marslogo from "@/assets/images/mars-logo-without-text.png";
 import user from "@/assets/images/user.png";
 
 import {ref} from "vue";
-const isOpen = ref(true);
+const isOpen = ref(false);
 
 function toggle(){
     isOpen.value = !isOpen.value;
@@ -20,14 +20,7 @@ defineExpose({toggle})
     <div>
       <!-- <button type="button" id="close">close</button> -->
 
-      <div class="sticky top-0">
-        <div class="p-2 bg-white mt-2 flex items-center outline-none gap-2" id="close" >
-          <!-- <img :src="marslogo" alt="mars-logo" class="w-6" /> -->
-          <h2 class="text-2xt text-white font-bold">MARS</h2>
-          <i class="fa-solid fa-xmark ml-32 text-red-600 bg-white drop-shadow-md rounded-full p-2 px-2.7 cursor-pointer"
-          @click="toggle"></i>
-        </div>
-
+      <div class="flex justify-between items-center pt-4">
         <!-- user -->
         <a href="#">
           <div class="flex items-center bg-white text-primary gap-3 p-2">
@@ -39,6 +32,11 @@ defineExpose({toggle})
             </h3>
           </div>
         </a>
+        <!-- close button -->
+        <div class=" bg-white flex items-center outline-none" id="close" >
+          <i class="fa-solid fa-xmark mr-2 text-red-600 bg-white drop-shadow-md rounded-full p-2 px-2.5 cursor-pointer"
+          @click="toggle"></i>
+        </div>
       </div>
 
       <hr class="border-b border-b-stockColor py-2 border-0" />

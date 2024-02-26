@@ -17,8 +17,8 @@ export default {
       <img :src="medical.image" alt="" srcset="" class="h-36" />
     </div>
     <h2 class="text-xl font-bold">{{ medical.name }}</h2>
-    <div class="">
-      <i class="fa-solid fa-location-dot text-primary"></i>
+    <div>
+      <i class="fa-solid fa-location-dot text-primary pr-1"></i>
       <span> {{ medical.address }} </span>
     </div>
     <div class="">
@@ -27,7 +27,7 @@ export default {
     </div>
     <div class="btnStyle">
       <span> {{ medical.status }}</span>
-      <i class="fa-solid fa-circle-check text-primary"></i>
+      <i class="fa-solid fa-circle-check pl-2 text-green-600"></i>
     </div>
   </div>
 </template>
