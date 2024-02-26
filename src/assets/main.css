@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+    .navStyle {
+        @apply p-2 mt-2 flex items-center px-4 duration-300 cursor-pointer border-l-4 border-l-white hover:border-l-4 hover:border-l-lightBlue hover:bg-lightBlue/20 hover:text-lightBlue;
+    }
+    .nav-item {
+        @apply text-base font-medium ml-4 text-primary;
+    }
+    .cardStyle {
+        @apply bg-white rounded-md flex flex-col p-4 space-y-2 mb-6 border border-primary/20 text-sm;
+    }
+    .doctorCard {
+        @apply flex flex-wrap p-4 sm:p-8 gap-4 border border-primary/20 rounded items-center;
+    }
+    .cardHeading {
+        @apply text-lg sm:text-xl font-bold pb-4;
+    }
+    .btnStyle {
+        @apply p-2 bg-primary/10 text-center text-xl font-medium text-primary rounded;
+    }
+
+
+}
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+      display: none;
+  }
+ /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+    
+
+}
