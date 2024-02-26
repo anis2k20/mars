@@ -157,8 +157,7 @@ let medicals = [
     <div class="flex-1">
       <!-- TOP NAV -->
       <header
-        class="w-full sticky top-0 bg-white border-b border-b-stockColor border-0"
-      >
+        class="w-full sticky top-0 bg-white border-b border-b-stockColor border-0">
         <div class="w-full flex justify-around items-center py-3">
           <button
             type="button"
@@ -204,8 +203,7 @@ let medicals = [
 
       <!-- CONTENT DISPLAY -->
       <main class="text-center w-full flex flex-col">
-        <div
-          class="container bg-white p-4 flex flex-wrap mx-auto gap-4 justify-evenly">
+        <div class="container bg-white p-4 flex flex-wrap mx-auto gap-3 justify-evenly">
           <!-- card -->
           <MedicalCard :medical="medical" v-for="medical in medicals" :key="medical"></MedicalCard>
           <!-- end card -->
