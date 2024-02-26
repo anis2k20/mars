@@ -3,12 +3,10 @@ export default {
   name: "MedicalCard",
   data() {
     return {
-     
+
     };
   },
-  props:['medical']
-
-  
+  props: ['medical']
 };
 
 </script>
