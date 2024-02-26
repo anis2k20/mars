@@ -207,9 +207,7 @@ let medicals = [
         <div
           class="container bg-white p-4 flex flex-wrap mx-auto gap-4 justify-evenly">
           <!-- card -->
-
           <MedicalCard :medical="medical" v-for="medical in medicals" :key="medical"></MedicalCard>
-
           <!-- end card -->
         </div>
       </main>
