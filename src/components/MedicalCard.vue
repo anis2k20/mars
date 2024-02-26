@@ -1,5 +1,4 @@
 <script>
-import medinova from "@/assets/images/medinova.jpg"
 export default {
   name: "MedicalCard",
   data() {
@@ -12,14 +11,6 @@ export default {
   
 };
 
-// import medinova from "@/assets/images/medinova.jpg"
-// let medical = {
-//     name: 'Medinova Medical Services Ltd',
-//     address: 'House 71/A, Road 5/A, Dhanmondi R/A, Dhaka-1209',
-//     phone: ' 01755-555555',
-//     status: 'Availabe',
-//     image: medinova
-// }
 </script>
 
 <template>
