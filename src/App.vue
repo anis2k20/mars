@@ -16,6 +16,10 @@ import DesktopSidebar from "@/components/DesktopSidebar.vue";
 import MobileSidebar from "@/components/MobileSidebar.vue";
 import {ref} from "vue";
 
+// Filter
+import Filter from "@/components/Filter.vue";
+
+// Doctor profile
 import DoctorProfile from "@/components/DoctorProfile.vue";
 import fdoctor from "@/assets/images/female-doctor.png";
 import fdoctor1 from "@/assets/images/female-doctor-1.png"
@@ -129,6 +133,8 @@ const sidebar = ref(null);
           <!-- card -->
           <MedicalCard :medical="medical" v-for="medical in medicals" :key="medical"></MedicalCard>
           
+          <Filter></Filter>
+
           <DoctorProfile :doctor="doctor" v-for="doctor in doctors"></DoctorProfile>
           <!-- end card -->
         </div>

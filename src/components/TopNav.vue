@@ -50,5 +50,5 @@ function toggle(){
             </div>
           </a>
         </div>
-      </header>
+    </header>
 </template>
