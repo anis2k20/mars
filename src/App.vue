@@ -16,6 +16,49 @@ import DesktopSidebar from "@/components/DesktopSidebar.vue";
 import MobileSidebar from "@/components/MobileSidebar.vue";
 import {ref} from "vue";
 
+import DoctorProfile from "@/components/DoctorProfile.vue";
+import fdoctor from "@/assets/images/female-doctor.png";
+import fdoctor1 from "@/assets/images/female-doctor-1.png"
+import fdoctor2 from "@/assets/images/female-doctor-2.png"
+import mdoctor from "@/assets/images/male-doctor.png"
+import mdoctor1 from "@/assets/images/male-doctor-1.png"
+import mdoctor2 from "@/assets/images/male-doctor-2.png"
+
+
+
+let doctors = [
+  {
+    name: 'Dr. Major Kazi Suriya Begum Rtd.',
+    specialist: 'Gynecologist, Surgery',
+    image: fdoctor,
+  },
+  {
+    name: 'Dr. Shamima Chowdhory',
+    specialist: 'Gynecologist',
+    image: fdoctor1,
+  },
+  {
+    name: 'Dr. Rehana Begum',
+    specialist: 'Gynecologist',
+    image: fdoctor2,
+  },
+  {
+    name: 'Dr. Shamim Usman',
+    specialist: 'Surgery',
+    image: mdoctor,
+  },
+  {
+    name: 'Dr. Shrabon Chowdhory',
+    specialist: 'Sergery',
+    image: mdoctor1,
+  },
+  {
+    name: 'Dr. Shamima Chowdhory',
+    specialist: 'Surgery',
+    image: mdoctor2,
+  },
+];
+
 let medicals = [
   {
     name: "Medinova Medical Services Ltd",
@@ -82,9 +125,11 @@ const sidebar = ref(null);
 
       <!-- CONTENT DISPLAY -->
       <main class="text-center w-full flex flex-col">
-        <div class="container bg-white p-4 flex flex-wrap mx-auto gap-3 justify-evenly">
+        <div class="container bg-white p-4 flex flex-wrap mx-auto gap-6 justify-evenly">
           <!-- card -->
           <MedicalCard :medical="medical" v-for="medical in medicals" :key="medical"></MedicalCard>
+          
+          <DoctorProfile :doctor="doctor" v-for="doctor in doctors"></DoctorProfile>
           <!-- end card -->
         </div>
       </main>

@@ -11,7 +11,7 @@
         @apply text-base font-medium ml-4 text-primary;
     }
     .cardStyle {
-        @apply bg-white rounded-md flex flex-col p-4 space-y-2 mb-6 border border-primary/20 text-sm;
+        @apply bg-white rounded-md flex flex-col p-4 px-6 space-y-2 border border-primary/20 text-sm;
     }
     .doctorCard {
         @apply flex flex-wrap p-4 sm:p-8 gap-4 border border-primary/20 rounded items-center;
