@@ -28,7 +28,8 @@ import mdoctor from "@/assets/images/male-doctor.png"
 import mdoctor1 from "@/assets/images/male-doctor-1.png"
 import mdoctor2 from "@/assets/images/male-doctor-2.png"
 
-
+// Doctor appointment
+import DoctorAppointment from "@/components/DoctorAppointment.vue";
 
 let doctors = [
   {
@@ -110,6 +111,30 @@ let medicals = [
   },
 ];
 
+let doctorAppointments = [
+  {
+    name : 'Shamim Chowdhory',
+    specialist : 'Surgery',
+    time : '09:00 AM',
+    date : '12/11/2024',
+    medical : 'Medinova Medical Services Ltd',
+  },
+  {
+    name : 'Symon Habib',
+    specialist : 'Surgery',
+    time : '09:00 AM',
+    date : '12/11/2024',
+    medical : 'Medinova Medical',
+  },
+  {
+    name : 'Shamim Chowdhory',
+    specialist : 'Surgery',
+    time : '09:00 AM',
+    date : '12/11/2024',
+    medical : 'Medinova Medical Services Ltd',
+  },
+];
+
 
 const sidebar = ref(null);
 
@@ -137,6 +162,23 @@ const sidebar = ref(null);
 
           <DoctorProfile :doctor="doctor" v-for="doctor in doctors"></DoctorProfile>
           <!-- end card -->
+
+          <!-- Doctor appointment -->
+          <div class="w-full flex flex-wrap justify-evenly p-4 items-center">
+            <div class="py-4 space-y-4">
+              <h2 class="text-primary text-xl font-bold">My appointment list</h2>
+              <hr class="border-b-stockColor border-b my-2 outline-none border-0">
+                <DoctorAppointment :info="info" v-for="info in doctorAppointments"></DoctorAppointment>
+              
+            </div>
+            <div class="border-l border-r border-l-stockColor border-r-stockColor px-1 hidden sm:block h-full"></div>
+            <div class="py-4 space-y-4">
+              <h2 class="text-primary text-xl font-bold">Relative appointment</h2>
+              <hr class="border-b-stockColor border-b my-2 outline-none border-0">
+              <DoctorAppointment :info="info" v-for="info in doctorAppointments"></DoctorAppointment>
+            </div>
+          </div>
+
         </div>
       </main>
       <!-- end content display -->
